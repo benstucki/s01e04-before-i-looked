@@ -64,6 +64,7 @@ export function readNight(runsDir: string, night: string): NightDigest {
       owner: latest.owner,
       runs: events.length,
       retries: events.filter((e) => e.status === 'retry').length,
+      fails: events.filter((e) => e.status === 'fail').length,
       lastStatus: latest.status,
       lastError: latest.error,
       first: first.at,

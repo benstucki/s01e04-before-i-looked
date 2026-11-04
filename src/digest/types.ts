@@ -8,6 +8,7 @@ export type DigestRow = {
   owner: string | null;
   runs: number;
   retries: number;
+  fails: number;
   lastStatus: JobStatus;
   lastError: string | null;
   first: string;
